@@ -22,23 +22,27 @@ namespace MyCSharpProject
 
             /*---------- Operators and cycles ---------*/
 
-            //Lection3.Task1.Run(); // done
-            //Lection3.Task2.Run(); // done
-            //Lection3.Task3.Run(); // done
-            //Lection3.Task4.Run(); // done
-            //Lection3.Task5.Run(); // done
+            //Lection3.Task1.Run(); // marked
+            //Lection3.Task2.Run(); // marked
+            //Lection3.Task3.Run(); // marked
+            //Lection3.Task4.Run(); // marked
+            //Lection3.Task5.Run(); // marked
 
             /*--------- Massives and methods ---------*/
 
-            //Lection4.Task1.Run(); // done
-            //Lection4.Task2.Run(); // done
-            //Lection4.Task3.Run(); // done
-            //Lection4.Task4.Run(); // done
-            //Lection4.Task5.Run(); // done
+            //Lection4.Task1.Run(); // marked
+            //Lection4.Task2.Run(); // marked
+            //Lection4.Task3.Run(); // marked
+            //Lection4.Task4.Run(); // marked
+            //Lection4.Task5.Run(); // marked
 
-            /*--------- Classes, costructors, methods, modeficators of access ---------*/
+            /*--------- Classes, costructors, methods, modeficators of access, inheritance, upcasting/downcasting, Is/As, GetType---------*/
 
-            Lection5.Task.Run(); // done
+            //Lection5.Task.Run(); // done
+
+            /*--------- Overload, Polymorphism (static, dynamic) ---------*/
+
+            Lection6.Task.Run(); // 
         }
     }
 }

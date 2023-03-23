@@ -1,8 +1,8 @@
-﻿namespace MyCSharpProject.Lection5
+﻿namespace MyCSharpProject.Lection6
 {
-    public class Student
-    {
-
+    class Student : Person
+    { 
+        
         // properties
         public string FirstName { get; set; }
         public string LastName { get; set; }
@@ -35,7 +35,7 @@
             Courses = new[] { "math", "bio", "logic" };
         }
         //methods
-        public void Print()
+        public void PrintStudent ()
         {
 
             Console.WriteLine($"\n \t First name: {FirstName}; \n \t Last name: {LastName}; \n \t Age: {Age}; \n \t City: {City} ; \n \t Courses: ");
@@ -106,6 +106,11 @@
                 // assign the new array to the Courses property
                 Courses = newCourses;
             }
+        }
+
+        public override string DescribeYourself()
+        {
+            return ($"\n \t First name: {FirstName}; \n \t Last name: {LastName}; \n \t Age: {Age}; \n \t City: {City} ; \n \t Courses {Courses.Length}");
         }
     }
 }

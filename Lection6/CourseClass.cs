@@ -1,4 +1,4 @@
-﻿namespace MyCSharpProject.Lection5
+﻿namespace MyCSharpProject.Lection6
 {
     class CourseClass
     {
@@ -29,7 +29,7 @@
             Students = new List<string>();
         }
 
-        public CourseClass(string courseName, string teacherName, int courseDuration, List<string> students)
+        public CourseClass(string courseName, string teacherName, int courseDuration, List<string> students) 
         {
             this.CourseName = courseName;
             this.TeacherName = teacherName;
@@ -48,10 +48,9 @@
             if (Students != null)
             {
                 foreach (string student in Students)
-                {
-                    Console.WriteLine(student);
-                }
-            }
+            {
+                Console.WriteLine(student);
+            }}
         }
 
         public void AddStudent(string student)
