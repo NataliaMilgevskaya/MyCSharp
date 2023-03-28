@@ -38,11 +38,17 @@ namespace MyCSharpProject
 
             /*--------- Classes, costructors, methods, modeficators of access, inheritance, upcasting/downcasting, Is/As, GetType---------*/
 
-            //Lection5.Task.Run(); // done
+            //Lection5.Task.Run(); // marked
 
             /*--------- Overload, Polymorphism (static, dynamic) ---------*/
 
-            Lection6.Task.Run(); // 
+            //Lection6.Task.Run(); // marked
+
+            /*--------- Static classes, methods, collections ---------*/
+
+            Lection7.Task.Run(); // done
+
+
         }
     }
 }
