@@ -1,6 +1,7 @@
 ﻿using Microsoft.VisualBasic;
 using MyCSharpProject.Lection5;
 using MyCSharpProject.Lection6;
+using MyCSharpProject.Lection7;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -109,12 +110,43 @@ namespace MyCSharpProject.Lection8
             }
 
 
+            
+            // Get the search string from the console
+            Console.Write("Enter a search chair: ");
+            try
+            {
+                var a = 0;
+                var b = 0;
+                var c = a % b;
+
+                char searchChar = Console.ReadLine().ToUpper()[0];
+                // Filter the teachers by level
+                var selectTeachers = teachers.Where(
+                    t => t.Level.ToUpper().Contains(searchChar));
+
+                // Display the filtered teachers
+                Console.WriteLine($"Found matching teachers:");
+                foreach (var teacher in selectTeachers)
+                {
+                    teacher.PrintTeacher();
+
+                    // Loop through all the associated students
+                    foreach (Student student in teacher.Students)
+                    {
+
+                        // Check if the student's name contains the letter
+
+                        if (student.FirstName.ToUpper().Contains(searchChar))
+                        {
+                            Console.WriteLine($"{student.FirstName} {student.LastName} - has the chair {searchChar} in the Name");
+
+                        }
 
 
-
-
-
-
+                    }
+                }
+            }
+            catch (Exception ex){ Console.WriteLine(ex.Message); }
 
         }
 
