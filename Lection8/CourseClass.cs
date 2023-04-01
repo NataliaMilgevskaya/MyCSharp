@@ -9,9 +9,12 @@ namespace MyCSharpProject.Lection8
         public string TeacherName { get; set; }
         public int CourseDuration { get; set; }
         public int NumberOfStudents { get; set; }
+        public int NumberOfTeachers { get; set; }
         public List<string> Students { get; set; }
 
         public List<Student> StudentNew { get; set; }
+
+        public List<Teacher> TeacherNew { get; set; }
 
         //constructors
         public CourseClass(string courseName, string teacherName, int courseDuration, int numberOfStudents)
@@ -20,8 +23,11 @@ namespace MyCSharpProject.Lection8
             TeacherName = teacherName;
             CourseDuration = courseDuration;
             NumberOfStudents = numberOfStudents;
+            
             Students = new List<string>();
             StudentNew = new List<Student>();
+            TeacherNew = new List<Teacher>();
+         
         }
 
         public CourseClass(string courseName, string teacherName, int courseDuration, int numberOfStudents, List<string> students) : this(courseName, teacherName, courseDuration, numberOfStudents)
@@ -41,6 +47,7 @@ namespace MyCSharpProject.Lection8
             this.CourseDuration = courseDuration;
             this.Students = students;
             StudentNew = new List<Student>();
+            TeacherNew = new List<Teacher>();
         }
 
         //methods
@@ -50,13 +57,18 @@ namespace MyCSharpProject.Lection8
             Console.WriteLine($"Teacher Name: {TeacherName}");
             Console.WriteLine($"Course Duration: {CourseDuration}");
             Console.WriteLine($"Number of Students: {NumberOfStudents}");
-            Console.WriteLine("Students:");
-            if (Students != null)
+            Console.WriteLine("StudentNew:");
+            
+            for (int i = 0; i < StudentNew.Count; i++)
             {
-                foreach (string student in Students)
-                {
-                    Console.WriteLine(student);
-                }
+                Console.WriteLine($"\t \t - {StudentNew[i].FirstName} {StudentNew[i].LastName}");
+            }
+           
+            Console.WriteLine("TeacherNew:");
+
+            for (int i = 0; i < TeacherNew.Count; i++)
+            {
+                Console.WriteLine($"\t \t - {TeacherNew[i].Level}");
             }
         }
 
@@ -81,5 +93,9 @@ namespace MyCSharpProject.Lection8
             return StudentNew.Count;
         }
 
+        public void AddTeacherNew(Teacher teacherNew)
+        {
+            TeacherNew.Add(teacherNew);
+        }
     }
 }

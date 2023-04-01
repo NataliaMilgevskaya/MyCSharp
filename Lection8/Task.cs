@@ -98,6 +98,10 @@ namespace MyCSharpProject.Lection8
             CourseCSh.AddStudentNew (Serge);
             CourseCSh.AddStudentNew(Grey);
 
+            CourseC.AddTeacherNew(Teacher1);
+            CourseJS.AddTeacherNew (Teacher2);
+            CourseCSh.AddTeacherNew(Teacher3);
+
             Console.WriteLine($"We have {courseClasses.Count} courses. The list if them above:");
             foreach (var course in courseClasses)
             {
