@@ -1,7 +1,7 @@
 ﻿using MyCSharpProject.Lection5;
 using System.Reflection.Emit;
 
-namespace MyCSharpProject.Lection7
+namespace MyCSharpProject.Lection8
 {
 
     public class Teacher : Person
@@ -96,6 +96,8 @@ namespace MyCSharpProject.Lection7
         {
             return CourseClass.Count;
         }
+
+        
 
     }
 }

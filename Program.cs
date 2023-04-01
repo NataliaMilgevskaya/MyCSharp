@@ -46,7 +46,11 @@ namespace MyCSharpProject
 
             /*--------- Static classes, methods, collections ---------*/
 
-            Lection7.Task.Run(); // done
+            //Lection7.Task.Run(); // marked
+
+            /*--------- linque, error handling ------------*/
+            
+            Lection8.Task.Run();
 
 
         }
